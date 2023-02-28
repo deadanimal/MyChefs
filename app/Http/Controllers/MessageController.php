@@ -55,4 +55,6 @@ class MessageController extends Controller
         ]);
         return back();
     }
+
+    public function app_restaurant_send_message(Request $request) {}
 }
