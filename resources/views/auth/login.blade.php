@@ -11,14 +11,14 @@
                 <div class="pb-3 mb-3">
                     <div class="position-relative"><i
                             class="ai-mail fs-lg position-absolute top-50 start-0 translate-middle-y ms-3"></i>
-                        <input class="form-control form-control-lg ps-5" type="email" placeholder="Email address" required>
+                        <input class="form-control form-control-lg ps-5" name="email" type="email" placeholder="Email address" required>
                     </div>
                 </div>
                 <div class="mb-4">
                     <div class="position-relative"><i
                             class="ai-lock-closed fs-lg position-absolute top-50 start-0 translate-middle-y ms-3"></i>
                         <div class="password-toggle">
-                            <input class="form-control form-control-lg ps-5" type="password" placeholder="Password"
+                            <input class="form-control form-control-lg ps-5" name="password" type="password" placeholder="Password"
                                 required>
                             <label class="password-toggle-btn" aria-label="Show/hide password">
                                 <input class="password-toggle-check" type="checkbox"><span

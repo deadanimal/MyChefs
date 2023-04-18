@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminRestaurantController;
 use App\Http\Controllers\SiteController;
 use App\Http\Controllers\WebRestaurantController;
 use Illuminate\Support\Facades\Route;
@@ -78,5 +79,11 @@ Route::middleware('auth')->group(function () {
     
     
     Route::get('/home', [WebRestaurantController::class, 'show_second_home']);
+
+});
+
+Route::middleware('AdminAccess')->prefix('admin')->group(function () {
+
+    Route::get('', [AdminRestaurantController::class, 'show_dashboard']);
 
 });
